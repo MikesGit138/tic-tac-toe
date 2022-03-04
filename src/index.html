@@ -14,6 +14,28 @@
 </head>
 <body>
   <app-root></app-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD5vVcs6LSrkiARXR7XBN3pbZSEEK4ry2c",
+      authDomain: "my-game-6ab38.firebaseapp.com",
+      projectId: "my-game-6ab38",
+      storageBucket: "my-game-6ab38.appspot.com",
+      messagingSenderId: "781844780919",
+      appId: "1:781844780919:web:921c5c23dc4e8ffe61f372",
+      measurementId: "G-WSF5EGDSY9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
