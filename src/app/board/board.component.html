@@ -1,13 +1,13 @@
-<h1>Current Player: {{ player }} </h1>
 
-<button (click)="newGame()">Start new Game</button>
+<div class="new-game-btn-ctn">
+<button mat-button color="primary" (click)="newGame()" id="new-game-button">Start new Game</button>
+</div>
 
-
-<h2 *ngIf="winner">
-    Player {{ winner }} won the game!
-</h2>
-
-
+<!-- <h2 *ngIf="draw">
+    The game is drawn
+</h2> -->
+<div class="grid-ctn">
+<mat-card>
 <main>
     <app-square 
         *ngFor="let val of squares; let i = index" 
@@ -16,3 +16,13 @@
 
     </app-square>
 </main>
+</mat-card>
+<h2>Current Player: {{ player }} </h2>
+
+</div>
+
+<div class="win-modal">
+    <h2 *ngIf="winner">
+        {{ winner }} won the game!
+    </h2>
+</div>
