@@ -38,7 +38,12 @@ export class BoardComponent implements OnInit {
     }
 
     this.winner = this.calculateWinner();
+
+    // if (this.winner = this.calculateWinner()){
+    //   alert('you won!')
+    // }
   }
+  
 //  calculateDraw(idx: number){
 //    if(this.squares[idx]){
 //      this.draw = true;
@@ -75,4 +80,6 @@ export class BoardComponent implements OnInit {
     return null;
   } 
 }
+
+
 

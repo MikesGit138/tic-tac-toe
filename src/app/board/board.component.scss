@@ -29,6 +29,28 @@ app-square {
     align-items: center;
     padding-bottom: 2em;
 }
+.win-modal{
+    display: block;
+    padding: 5em;
+    // background-color: white;
+    // color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 200px;
+    // width: 200px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+.card-modal{
+    padding: 3rem;
+}
+
+
 @media screen and (max-width: 600px){
     app-square{
         width: 25vw;
